@@ -1,0 +1,488 @@
+/*
+Coder: Hagar Mohammed Abdeltawab
+April 2022
+*/
+:root{
+    --main-color--: #ffcb0f;
+    --dark-color--: #222533;
+}
+.layer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 0;
+}
+/* Start Upperbar */
+.upper-bar{
+    background-color: var(--main-color--);
+}
+.upper-bar nav{
+    padding: 10px 16px 0 16px
+}
+.upper-bar nav ul li{
+    padding-right: 10px
+}
+.upper-bar nav ul li:last-of-type{
+    padding-right: 0;
+}
+@media  screen and (max-width: 767px) {
+    .upper-bar nav ul li{
+        margin: auto
+    }
+    .upper-bar nav ul:last-of-type{
+        padding: 0 20%;
+    }
+}
+@media  screen and (max-width: 767px) {
+    .upper-bar nav .contact-info {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .upper-bar nav .contact-info li {
+        font-size: smaller;
+        
+    }
+}
+.upper-bar nav ul li a{
+    color: var(--dark-color--);
+}
+.upper-bar nav ul li a i{
+    font-size: 20px;
+
+}
+/* End Upperbar */
+/* Start second bar  */
+.second-bar {
+    background-color: var(--dark-color--);
+    color: #FFF;
+}
+.second-bar nav .navbar-brand{
+    color: #FFF;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+.second-bar nav .navbar-brand:hover{
+    color: #FFF;
+}
+.second-bar nav h2{
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+.second-bar nav h2 span{
+    color: var(--main-color--);
+}
+.second-bar nav .navbar-brand p{
+    font-size: 16px;
+    color: #6c757d;
+    font-weight: 500;
+}
+.second-bar nav ul{
+    margin-inline-start: auto;
+}
+@media screen and (max-width: 991px) {
+    .second-bar nav ul .nav-item{
+        margin: auto;
+        border-bottom: 1px solid #FFf;
+    }
+}
+.second-bar nav ul .nav-item .nav-link{
+    color: #FFF;
+    transition:all 0.5s ease-in-out;
+}
+.second-bar nav ul .nav-item:last-of-type .nav-link{
+    color: var(--main-color--);
+}
+.second-bar .navbar-light .navbar-nav .active > .nav-link,
+.second-bar nav ul .nav-item .nav-link:hover{
+    color: var(--main-color--);
+}
+/* End second bar  */
+
+/* Start header */
+header{
+    position: relative;
+    background-image: url('../Images/banner.jpg');
+    background-size: cover;
+    height: 900px;
+    z-index: 1;
+}
+header .head-text{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+}
+header .head-text .bigger{
+    font-size: 25px;
+}
+@media screen and (max-width: 480px){
+    header .head-text .bigger{
+        font-size: 20px;
+    }
+}
+header .head-text h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+    header .head-text h1{
+        font-size: 40px;
+    }
+}
+
+header .head-text h1 .colored{
+    color: var(--main-color--);
+}
+header .head-text p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 480px){
+    header .head-text p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+header .head-text button{
+    background-color: #000;
+    padding: 8px 15px;
+    color: var(--main-color--);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--main-color--);
+    transition: all 0.5s ease-in-out;
+}
+header .head-text button:hover{
+    background-color: transparent;
+    border-width: 2px;
+}
+header .head-text a:hover{
+    text-decoration: none;
+}
+@media screen and (max-width: 480px){
+    header .head-text a{
+        display: block;
+    }
+}
+/* End header */
+
+/* Start Overview section (the Second)  */
+.overview{
+    padding-top: 30px;
+}
+.overview h2{
+    color: var(--main-color--);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.overview span{
+    color: var(--dark-color--);
+    font-weight: bold;
+    font-size: 25px;
+}
+.overview p{
+    color: rgb(107, 106, 106);
+    padding-top: 30px;
+}
+.overview .btn{
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--main-color--);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.overview .btn:hover{
+    color: var(--main-color--);
+    background-color: transparent;
+    border: 2px solid var(--main-color--)
+}
+/* End Overview section (the Second)  */
+
+/* Start Choose us Section  */
+.choose{
+    background-image: url('../Images/bg4.jpg');
+    background-size: cover;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+}
+.choose .container{
+    position: relative;
+    z-index: 2;
+}
+.choose h2{
+    color: var(--main-color--);
+    padding: 10px 0 20px 0;
+}
+.choose p{
+    color: #fff;
+}
+.choose .card {
+    background-color: #00000075;
+    margin-top: 90px;
+}
+.choose .card:hover{
+    background-color: #eedede75;
+    box-shadow: 7px 7px 7px #00000075;
+}
+.choose .card:hover p{
+    color: var(--dark-color--);
+}
+.choose .card .card-title{
+    color: var(--main-color--);
+    margin-top: 75px;
+    font-size: 18px;
+
+}
+.choose .card .image{
+    background-color: var(--main-color--);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.choose .card .image img{
+    margin-top: 50px
+}
+/* End Choose us Section  */
+
+/* Start Services section  */
+.services{
+    margin: 40px 0 10px 0;
+    background-color: #FFF;
+}
+.services h2{
+    color: var(--dark-color--);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.services .card{
+    border: none;
+    margin-bottom: 30px;
+}
+.services .card .img-area1,
+.services .card .img-area2,
+.services .card .img-area3{
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.services .card h5{
+    margin-bottom: 0;
+}
+.services .card .img-area1{
+    background-image: url(../Images/card1.jpg);
+
+}
+.services .card .img-area2{
+    background-image: url(../Images/card2.jpg);
+
+}
+.services .card .img-area3{
+    background-image: url(../Images/card3.jpg);
+}
+.services .card .card-title{
+    text-align: center;
+    background-color: #0000007d;
+    color: #FFF;
+    padding: 10px 0;
+}
+.services .card .card-body .btn{
+    background-color: var(--main-color--);
+    color: #FFF;
+    font-weight: bold;
+}
+.services .card .card-body .btn:hover{
+    background-color: transparent;
+    color: var(--main-color--);
+    border: 2px solid var(--main-color--)
+}
+/* End Services section  */
+
+/* Start Portofolio Section  */
+.portofolio{
+    background-image: url('../Images/bg2.jpg');
+    background-size: cover;
+    position: relative;
+    color: #FFF;
+}
+.portofolio .layer{
+    background-color: #6e6d5acc;
+}
+.portofolio h2{
+    font-weight: bold;
+}
+.portofolio span{
+    font-weight: 500;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+.portofolio span:hover{
+    background-color: var(--dark-color--);
+    border-radius: 20px;
+}
+.portofolio img{
+    cursor: pointer;
+}
+@media screen and (max-width: 991px){
+    .portofolio img{
+        margin-bottom: 20px;
+    }
+}
+.portofolio span.chosen{
+    background-color: var(--dark-color--);
+    border-radius: 20px;
+}
+@media screen and (max-width: 767px) {
+    .portofolio img{
+        padding-bottom: 20px ;
+    }
+}
+@media screen and (max-width: 480px) {
+    .portofolio img{
+        padding-bottom: 10px ;
+    }
+}
+
+/* End Portofolio Section  */
+
+/* Start Reviews section  */
+.reviews{
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    color: var(--dark-color--);
+}
+.reviews h2{
+    font-weight: bold;
+}
+.reviews .quote {
+    background-color: #e5e5e5;
+    padding: 15px;
+}
+.reviews .colored-bg {
+    background-color: #ffcb0f;
+    padding: 15px;
+}
+.reviews .row h5{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+}
+/* End Reviews section  */
+
+/* Start Contact section  */
+.contact{
+    padding: 20px 0;
+    color: #565d64;
+    border-bottom: 25px solid #565d64;
+    background-color: #eccc59;
+}
+.contact p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #565d64;
+}
+.contact p span{
+    font-weight: 400;
+}
+.contact input{
+    border-radius: 10px;
+    border: none;
+}
+.contact .btn{
+    background-color: #565d64;
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100%;
+}
+/* End Contact section  */
+
+/* Start Footer  */
+footer{
+    background-image: url('../Images/bg2.jpg');
+    background-size: cover;
+}
+footer .layer{
+    background-color: rgb(0 0 0 / 88%);
+}
+footer *{
+    color: #FFF;
+}
+footer h3{
+    color: var(--main-color--);
+    font-weight: bold;
+}
+footer li a:hover{
+    text-decoration: none;
+    color: var(--main-color--);
+}
+@media screen and (max-width: 991px) {
+    footer .social{
+        padding-right: 70px;
+    }
+}
+footer .social li{
+    background-color: var(--main-color--);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+footer .social li a i{
+    margin-top: 7px;
+    color: var(--dark-color--);
+    font-size: 20px;
+}
+footer .social li a i:hover{
+    color: #FFF;
+}
+footer .latest li a{
+    display: flex;
+    align-content: center;
+}
+footer .latest li a div{
+    font-size: 25px;
+    line-height: 0.5;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+footer .latest li a div span{
+    font-size: 12px;
+}
+footer .latest li a p{
+    margin: auto 0;
+}
+.copyright{
+    background-color: var(--dark-color--);
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+}
+.copyright a{
+    color: var(--main-color--);
+}
+/* Start Footer  */
