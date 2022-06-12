@@ -331,27 +331,25 @@ header .head-text a:hover{
 .portofolio h2{
     font-weight: bold;
 }
-.portofolio span{
+.portofolio .select li{
     font-weight: 500;
     padding: 7px 10px;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
-.portofolio span:hover{
+.portofolio li:hover,
+.portofolio .active{
     background-color: var(--dark-color--);
     border-radius: 20px;
-}
-.portofolio img{
-    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 991px){
     .portofolio img{
         margin-bottom: 20px;
     }
 }
-.portofolio span.chosen{
-    background-color: var(--dark-color--);
-    border-radius: 20px;
-}
+
 @media screen and (max-width: 767px) {
     .portofolio img{
         padding-bottom: 20px ;

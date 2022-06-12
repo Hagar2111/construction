@@ -275,34 +275,27 @@
 			<p class="position-relative">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga tempore, iste voluptatum ipsum iure nostrum veritatis, dignissimos illum eum nemo ratione nostrum veritatis, dignissimos illum eum nemo ratione nostrum veritatis, dignissimos illum eum nemo ratione.
 			</p>
-			<div class="row justify-content-center justify-content-sm-center py-4 ">
-				<div class="col-lg-2 col-md-3 mb-2 ">
-					<span class="chosen ">SHOW ALL</span>
-				</div>
-				<div class="col-lg-2 col-md-2 mb-2 mt-1 ">
-					<span class="">BUILDINGS</span>
-				</div>
-				<div class="col-lg-2 col-md-3 mb-2 mt-1">
-					<span class="">INTERIOR DESIGN</span>
-				</div>
-				<div class="col-lg-2 col-md-2 mb-2 mt-1">
-					<span class="">ISOLATION</span>
-				</div>
-				<div class="col-lg-2 col-md-2 mb-2 mt-1">
-					<span class="">PLUMBING</span>
-				</div>
-			</div>
-			<div class="row pt-3">
-				<div class="col-lg-6 col-md-12 d-flex flex-column ">
-					<img src="Images/gallery1.jpg" class="img-fluid" alt="gallery">
-				</div>
-				<div class="col-lg-3 col-md-12 d-flex flex-column justify-content-between">
-					<img src="Images/gallery2.jpg" class="img-fluid" alt="gallery">
-					<img src="Images/gallery3.jpg" class="img-fluid" alt="gallery" >
-				</div>
-				<div class="col-lg-3 col-md-12 d-flex flex-column justify-content-between ">
-					<img src="Images/gallery4.jpg" class="img-fluid" alt="gallery">
-					<img src="Images/gallery5.jpg" class="img-fluid" alt="gallery" >
+			<ul class="select list-unstyled row justify-content-between justify-content-sm-center py-4">
+				<li data-class="all" class="col-md active ">SHOW All</li>
+				<li data-class=".buldings" class="col-md">BUILDINGS</li>
+				<li data-class=".design" class="col-md">INTERIOR DESIGN</li>
+				<li data-class=".isolation" class="col-md">ISOLATION</li>
+				<li data-class=".plumbing" class="col-md">PLUMBING</li>
+			</ul>
+			
+            <div class="shuffle-imgs">
+				<div class="row pt-3">
+					<div class="col-lg-6 col-md-12 d-flex flex-column ">
+						<div class="image"><img src="Images/gallery1.jpg" class="buldings img-fluid" alt="gallery"></div>
+					</div>
+					<div class="col-lg-3 col-md-12 d-flex flex-column justify-content-between">
+						<div class="image"><img src="Images/gallery2.jpg" class="design img-fluid" alt="gallery"></div>
+						<div class="image"><img src="Images/gallery3.jpg" class="isolation img-fluid" alt="gallery" ></div>
+					</div>
+					<div class="col-lg-3 col-md-12 d-flex flex-column justify-content-between ">
+						<div class="image"><img src="Images/gallery4.jpg" class="buldings img-fluid" alt="gallery"></div>
+						<div class="image">><img src="Images/gallery5.jpg" class="plumbing img-fluid" alt="gallery" ></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -538,5 +531,6 @@
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
